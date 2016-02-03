@@ -1,0 +1,536 @@
+/* Defaults */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    color:#666666;
+    background-color: transpant;
+}
+
+/* Layout */
+body
+{
+	height: 540px;
+    width: 960px; 
+	color:#c0c0c0;
+	
+}
+
+
+#main
+{
+	background-image:url("../Images/bgMain.png");
+	background-repeat:no-repeat;
+	left: 0px; top: 0px;
+	position: absolute;
+	width: 960px; height: 540px;
+	
+}
+
+#container
+{
+	top:10px; left:15px;
+	background: url('../Images/Bg.png') no-repeat top left;
+	position:absolute;
+	width:940px;
+	height:500px;
+	
+	
+}
+
+#error {
+    background: url('../Images/bgError.png') no-repeat top center;
+	display: none;
+    height:120px;
+	left: 200px;
+    margin: 0px;
+	padding: 40px;
+	position: absolute;
+	text-align: center;
+	top: 250px;
+	width: 490px;
+	z-index:100;
+	    
+}
+
+
+#top_menu
+{
+	font-size:18px;
+	overflow:hidden;
+
+	position:absolute;
+	right:0px; top:15px; 
+	width:350px; height:40px;
+
+	list-style-type: none;
+	background: url('../Images/Bg2.png') no-repeat bottom left;
+	
+	
+	
+}
+
+#top_menu .menu
+{
+	float:left;
+	padding-top:8px;
+	color:#666666;	
+	text-align:center;
+	width:160px; height: 40px;
+}
+
+#top_menu .current
+{
+	
+	float:left;
+	padding-top:8px;
+	width:160px; height: 36px;
+	text-align:center;
+	
+	background: url('../Images/listBox/menu_selector.png') no-repeat top center;
+	color:#ffffff;
+	
+}
+
+
+#videoBox_bottom
+{
+	display:none;
+    position:absolute;
+    left:0px; bottom:0px;
+    width:960px; height:30px;
+    background: url('../Images/videoBox/videoBarBg.png') repeat-x top left;
+	z-index:90;
+	
+}
+
+
+#time
+{
+    position:relative; 
+	right:0px;  bottom:0px; 
+    width:550px; height:30px;
+	color:#ffffff;
+	float:right;
+	
+}
+
+#timeInfo
+{
+    position:absolute;
+    right:10px; bottom:5px;
+    width:100px; height:15px;
+    color:#ffffff;
+    text-align:left;
+    font-size:11px;
+	letter-spacing:0.1px;
+	overflow:auto;
+	
+}
+
+#progressBarBG
+{
+    position:absolute;
+    right:120px; bottom:10px;
+    width:250px; height:3px;
+    background-image:url("../Images/videoBox/progressBarBG.png");
+}
+
+#progressBar
+{
+    position:absolute;
+    left:0px; top:0px;
+    width:0%; height:3px;
+    background-image:url("../Images/videoBox/progressBar.png");
+}
+
+#volume
+{
+    position:relative; 
+    left:0px; bottom:0px;
+    width:400px; height:30px;
+	float:left;
+	
+}
+
+#volumeIcon
+{
+    position:absolute;
+	overflow:visible;
+    left:20px; bottom:5px;
+	width:20px; height:20px;
+    background:url("../Images/videoBox/volume.png") no-repeat top left;
+	
+}
+
+#volumeBarBG
+{
+    position:absolute;
+    left:50px; top:15px;
+    width:144px; height:3px;
+    background-image:url("../Images/videoBox/volumeBarBG.png");
+}
+
+#volumeBar
+{
+    position:absolute;
+    left:0px; top:0px;
+    width:0%; height:3px;
+    background-image:url("../Images/videoBox/volumeBar.png");
+}
+
+#volumeInfo
+{
+    position:absolute;
+    left:200px; bottom:5px;
+    width:32px; height:15px;
+    color:#ffffff;
+    text-align:left;
+    font-size:12px;
+	
+}
+
+#videoControl
+{
+    position:absolute;
+    left:20px; top:0px;
+    width:150px; height:30px;
+	
+}
+
+#rewind
+{
+	position:absolute;
+    right:120px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/krew.png") no-repeat top center;
+	opacity:0.5;
+}
+
+#play
+{
+    position:absolute;
+    right:90px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kplay.png") no-repeat top center;
+	opacity:0.5;
+	
+}
+
+#stop
+{
+    position:absolute;
+    right:60px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kstop.png") no-repeat top center;
+    opacity:0.5;
+}
+
+#pause
+{
+	position:absolute;
+    right:30px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kpause.png")  no-repeat top center;
+	opacity:0.5;    
+}
+
+#forward
+{
+    position:absolute;
+    right:0px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kfwd.png")  no-repeat top center;
+    opacity:0.5;
+}
+
+#status
+{
+	position:absolute;
+    left:350px; bottom:5px;
+    width: 98px; height:15px;
+	color:#ffffff;
+    text-align:left;
+    font-size:12px;
+}
+
+#description 
+{
+	position:absolute;
+	left:20px; top:30px;
+    width:530px; height:430px;
+	overflow:scroll;
+	text-align:left;
+	font-size:14px;
+}
+
+#description p,
+#description p i,
+#description p a,
+#description p font,
+#description p b,
+#description p font a,
+#description p strong,
+#description p font strong,
+#description strong,
+#description td a 
+{
+	color:#666666;
+	text-align:left;
+	
+	font-weight:lighter;
+	position:static;
+	display:block;
+	
+}
+
+#description p img,
+#description a img,
+#description img 
+{
+	border:0;
+	margin: 10px 15px 15px 15px;
+	max-width: 210px;
+	max-height: 150px;
+	position:static;
+	background:url("../Images/Bg3.png")  no-repeat center center;
+	
+			
+}
+
+#description a object, 
+#description p object,
+#description object  {
+	display: none;
+}
+
+#description a iframe, 
+#description p iframe,
+#description iframe  {
+	display: none;
+}
+
+
+
+
+
+#videoList
+{
+	/*background: url('../Images/Bar.png') no-repeat top right;*/
+    position:absolute;
+    right:5px; top:70px; 
+    width:360px; height:330px;
+	
+}
+
+#video0
+{
+    position:absolute;
+    left:0px; top:10px;
+    width:340px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:10px;
+    padding-top:5px;
+	
+	overflow:hidden;
+}
+
+#video1
+{
+    position:absolute;
+    left:0px; top:60px;
+    width:340px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:10px;
+    padding-top:5px;
+	
+	overflow:hidden;
+}
+
+
+#video2
+{
+    position:absolute;
+    left:0px; top:110px;
+    width:340px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:10px;
+    padding-top:5px;
+
+	overflow:hidden;
+}
+
+#video3
+{
+    position:absolute;
+    left:0px; top:160px;
+    width:340px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:10px;
+    padding-top:5px;
+	
+	overflow:hidden;
+}
+
+#video4
+{
+    position:absolute;
+    left:0px; top:210px;
+    width:340px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:10px;
+    padding-top:5px;
+
+	overflow:hidden;
+}
+
+#videoCount
+{
+    position:absolute;
+    right:40px; top:330px;
+    width:30px; height:20px;
+    
+    text-align:left;
+    font-size:12px;
+}
+
+#previous
+{
+    position:absolute;
+    right:5px; top:60px;
+    width:30px; height:30px;
+    background-image:url("../Images/listBox/previous.png");
+	background-repeat:no-repeat;
+    opacity:0.2;
+	
+}
+
+#next
+{
+    position:absolute;
+    right:5px; top:330px;
+    width:30px; height:30px;
+    background-image:url("../Images/listBox/next.png");
+	background-repeat:no-repeat;
+    opacity:0.2;
+}
+
+.style_videoList
+{    
+    color:#FFFFFF;
+	
+    text-align:left;
+	overflow:hidden;
+    font-size:16px;
+}
+
+#navi
+{
+	position: absolute;
+	top: 505px;
+	height: 35px;
+	width: 100%;	
+}
+
+.help_navi
+{
+    position:absolute;
+    right: 20px; top:5px; 
+	height:25px;
+	float:right;
+}
+
+.style_navi {
+    bottom:9px;
+	color:#7f7f7f;
+    font-size:14px;
+}
+
+
+
+/*  --------------------------------------------  */
+/* Ventana de terminos condiciones*/
+
+.terms-window {
+	position: absolute;
+	top:0px;
+	height: 540px;
+	width: 960px;
+	background: url('../Images/bgTerms.png') repeat;
+	z-index: 10;
+}
+
+.terms-window p, li {
+	color:#666666;
+}
+.terms-window .terms {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	height: 370px;
+	width: 850px;
+	padding: 10px;
+	text-decoration: none;
+	
+}
+
+.terms-window .nav-info {
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	bottom: 0px;
+	right: 5px;
+	color: #ffff;
+	text-align: right;
+	text-decoration: none;
+}
+
+/*  --------------------------------------------  */
+
+
+#develop {
+	left: 0px;
+	position: absolute;
+	bottom: 8px;
+	z-index: 50;
+
+}
+
+
+
+/* Indicador de Carga*/
+#loading-indicator {
+	position: absolute;
+	color: #ffffff;
+	top: 210px;
+	left: 280px;
+	z-index: 101;
+	display:none;
+	
+}
+#loading-text {
+	position: absolute;
+	color:#666666;
+	top: 180px;
+	left: 260px;
+	z-index: 100;
+	display:none;
+	text-align:center;
+	vertical-align:bottom;
+	width:80px;
+	height:80px;
+	
+	
+	background:url("../Images/bgLoader.png");
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	
+}
